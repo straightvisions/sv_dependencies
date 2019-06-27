@@ -3,7 +3,7 @@
 	
 	/**
 	 * @author			straightvisions GmbH
-	 * @package			sv_100
+	 * @package			sv100
 	 * @copyright       2019 straightvisions GmbH
 	 * @link			https://straightvisions.com
 	 * @since			1.0
