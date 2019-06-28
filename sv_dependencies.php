@@ -64,6 +64,13 @@
 			
 			return $this;
 		}
+		public function prevent_plugin_activation(): init{
+			add_action('init', function(){
+				\deactivate_plugins(plugin_basename( __FILE__ ) );
+			});
+			
+			return $this;
+		}
 	}
 	
 	$GLOBALS[ __NAMESPACE__ ] = new init();
