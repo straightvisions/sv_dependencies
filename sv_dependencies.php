@@ -40,9 +40,10 @@
 		public function php_update_notification(): init{
 			add_action( 'admin_notices', function(){
 					echo '<div class="update-nag">';
-					echo 'You need to update your PHP version to run '.$this->get_instance_name().'<br/>';
-					echo 'Actual version is: <strong>'.phpversion().'</strong>, ';
-					echo 'required is <strong>'.$this->get_min_php_version().'</strong>';
+					echo __( 'You need to update your PHP version to run', 'sv_core' ) . ' ' .$this->get_instance_name()
+						 .'<br/>';
+					echo __( 'Actual version is:', 'sv_core' ) . '<strong>'.phpversion().'</strong>, ';
+					echo __( 'required is', 'sv_core' ) . ' <strong>'.$this->get_min_php_version().'</strong>';
 					echo '</div>';
 			} );
 			
@@ -51,7 +52,8 @@
 		public function missing_core_notification(): init{
 			add_action( 'admin_notices', function(){
 				echo '<div class="update-nag">';
-				echo 'You need to install and activate our SV Core plugin to run '.$this->get_instance_name().'<br/>';
+				echo __( 'You need to install and activate our SV Core plugin to run', 'sv_core' )
+					 . ' ' .$this->get_instance_name().'<br/>';
 				echo '</div>';
 			} );
 			
