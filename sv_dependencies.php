@@ -11,7 +11,7 @@
 	 */
 	
 	class init {
-		private $min_php			= '7.0.0';
+		private $min_php			= '7.3.0';
 		private $instance_name		= '';
 		
 		public function set_instance_name(string $instance_name): init{
