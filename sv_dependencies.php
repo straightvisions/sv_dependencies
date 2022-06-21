@@ -1,15 +1,6 @@
 <?php
 	namespace sv_dependencies;
-	
-	/**
-	 * @author			straightvisions GmbH
-	 * @package			sv_100
-	 * @copyright	   2019 straightvisions GmbH
-	 * @link			https://straightvisions.com
-	 * @since			1.0
-	 * @license			See license.txt or https://straightvisions.com
-	 */
-	
+
 	class init {
 		private $min_php			= '7.3.0';
 		private $instance_name		= '';
